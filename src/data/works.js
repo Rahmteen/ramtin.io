@@ -1,6 +1,3 @@
-let path = require('path');
-
-
 export const projects = [
 	{
 		title: 'Regal',
@@ -23,7 +20,7 @@ export const projects = [
 		github: null,
 		website: 'https://www.cardinal.works',
 		tool: false,
-		image: path.resolve('assets/images/works/Regal.jpg'),
+		image: "../../../assets/images/works/Regal.jpg",
         current: true,
 	},
 	{
@@ -48,7 +45,7 @@ export const projects = [
 		github: 'https://github.com/oslabs-beta/eeQL',
 		website: 'https://www.eeql.io',
 		tool: true,
-		image: path.resolve('assets/images/works/eeQL.jpg'),
+		image: '../../../assets/images/works/eeQL.jpg',
         current: false,
 	},
 	{
@@ -59,7 +56,7 @@ export const projects = [
 		github: 'https://github.com/OSAbstract/OSCardsv2',
 		website: null,
 		tool: false,
-		image: path.resolve('assets/images/works/OSCards.jpg'),
+		image: '../../../assets/images/works/OSCards.jpg',
         current: false,
 	},
 	{
@@ -70,7 +67,7 @@ export const projects = [
 		github: 'https://github.com/EasyMenus/menuCreator',
 		website: null,
 		tool: true,
-		image: path.resolve('assets/images/works/EasyMenus.jpg'),
+		image: '../../../assets/images/works/EasyMenus.jpg',
         current: false,
 	},
 	{
@@ -89,7 +86,7 @@ export const projects = [
 		github: 'https://github.com/Rahmteen/YEETH',
 		website: null,
 		tool: false,
-		image: path.resolve('assets/images/works/YEETH.jpg'),
+		image: '../../../assets/images/works/YEETH.jpg',
         current: false,
 	},
 	{
@@ -100,7 +97,7 @@ export const projects = [
 		github: 'https://github.com/Rahmteen/colourful',
 		website: null,
 		tool: true,
-		image: path.resolve('assets/images/works/colourful.jpg'),
+		image: '../../../assets/images/works/colourful.jpg',
         current: false,
 	},
 	{
@@ -122,7 +119,7 @@ export const projects = [
 		github: null,
 		website: null,
 		tool: true,
-		image: path.resolve('assets/images/works/MagnaCarta.jpg'),
+		image: '../../../assets/images/works/MagnaCarta.jpg',
         current: true,
 	},
 	{
@@ -132,7 +129,7 @@ export const projects = [
 		github: 'https://github.com/Rahmteen/eeQL-web',
 		website: 'https://www.eeql.io',
 		tool: false,
-		image: path.resolve('assets/images/works/eeql-web.jpg'),
+		image: '../../../assets/images/works/eeql-web.jpg',
         current: false,
 	},
 ];
