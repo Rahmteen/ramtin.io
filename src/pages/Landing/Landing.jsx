@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Col, Row, Image, Button } from 'react-bootstrap';
+import { Container, Col, Row, Image, Button, Carousel } from 'react-bootstrap';
 import rk_logo from '../../../assets/images/RKlogo.png';
 
 const Landing = () => {
@@ -41,6 +41,7 @@ const Landing = () => {
 					</Col>
 				</Row>
 			</Container>
+
 		</Fragment>
 	);
 };
