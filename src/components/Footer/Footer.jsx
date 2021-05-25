@@ -13,7 +13,7 @@ const Footer = () => {
 		<Container className="footer-container">
 			<Nav className="justify-content-center" activeKey="/home">
 				<Nav.Item>
-					<Nav.Link onClick={() => openInNewTab('mailto:ramtin.khoee@gmail.com')}><i class="fas fa-envelope-square"></i></Nav.Link>
+					<Nav.Link onClick={() => openInNewTab('mailto:ramtin.khoee@gmail.com')}><i className="fas fa-envelope-square"></i></Nav.Link>
 				</Nav.Item>
 				<Nav.Item>
 					<Nav.Link onClick={() => openInNewTab('https://github.com/Rahmteen')}>
@@ -30,7 +30,6 @@ const Footer = () => {
 				</Nav.Item>
 			</Nav>
 		</Container>
-		// </Navbar>
 	);
 };
 

@@ -50,6 +50,7 @@ module.exports = {
 						loader: 'svg-url-loader',
 						options: {
 							limit: 10000,
+              name: 'assets/[hash].[ext]'
 						},
 					},
 				],
@@ -64,6 +65,7 @@ module.exports = {
 	mode: 'development',
 	// setup dev server
 	devServer: {
+    // contentBase: path.resolve(__dirname, '/dist'),
 		host: 'localhost',
 		hot: true,
 		port: 8080,

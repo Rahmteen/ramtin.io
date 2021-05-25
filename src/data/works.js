@@ -1,3 +1,14 @@
+import Regal from "../../assets/images/works/regal.jpg"
+import eeQL from "../../assets/images/works/eeQL.jpg"
+import OSCards from "../../assets/images/works/OSCards.jpg"
+import EasyMenus from "../../assets/images/works/EasyMenus.jpg"
+import YEETH from "../../assets/images/works/YEETH.jpg"
+import Colourful from "../../assets/images/works/colourful.jpg"
+import MagnaCarta from "../../assets/images/works/MagnaCarta.jpg"
+import eeql_web from "../../assets/images/works/eeql-web.jpg"
+
+
+
 export const projects = [
 	{
 		title: 'Regal',
@@ -20,7 +31,7 @@ export const projects = [
 		github: null,
 		website: 'https://www.cardinal.works',
 		tool: false,
-		image: "../../../assets/images/works/Regal.jpg",
+		image: Regal,
         current: true,
 	},
 	{
@@ -45,7 +56,7 @@ export const projects = [
 		github: 'https://github.com/oslabs-beta/eeQL',
 		website: 'https://www.eeql.io',
 		tool: true,
-		image: '../../../assets/images/works/eeQL.jpg',
+		image: eeQL,
         current: false,
 	},
 	{
@@ -56,7 +67,7 @@ export const projects = [
 		github: 'https://github.com/OSAbstract/OSCardsv2',
 		website: null,
 		tool: false,
-		image: '../../../assets/images/works/OSCards.jpg',
+		image: OSCards,
         current: false,
 	},
 	{
@@ -67,7 +78,7 @@ export const projects = [
 		github: 'https://github.com/EasyMenus/menuCreator',
 		website: null,
 		tool: true,
-		image: '../../../assets/images/works/EasyMenus.jpg',
+		image: EasyMenus,
         current: false,
 	},
 	{
@@ -86,7 +97,7 @@ export const projects = [
 		github: 'https://github.com/Rahmteen/YEETH',
 		website: null,
 		tool: false,
-		image: '../../../assets/images/works/YEETH.jpg',
+		image: YEETH,
         current: false,
 	},
 	{
@@ -97,7 +108,7 @@ export const projects = [
 		github: 'https://github.com/Rahmteen/colourful',
 		website: null,
 		tool: true,
-		image: '../../../assets/images/works/colourful.jpg',
+		image: Colourful,
         current: false,
 	},
 	{
@@ -119,7 +130,7 @@ export const projects = [
 		github: null,
 		website: null,
 		tool: true,
-		image: '../../../assets/images/works/MagnaCarta.jpg',
+		image: MagnaCarta,
         current: true,
 	},
 	{
@@ -129,7 +140,7 @@ export const projects = [
 		github: 'https://github.com/Rahmteen/eeQL-web',
 		website: 'https://www.eeql.io',
 		tool: false,
-		image: '../../../assets/images/works/eeql-web.jpg',
+		image: eeql_web,
         current: false,
 	},
 ];

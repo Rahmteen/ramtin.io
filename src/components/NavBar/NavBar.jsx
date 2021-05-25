@@ -13,11 +13,7 @@ const NavBar = () => {
 	};
 
 	return (
-		// <Navbar className="nav-bar" fixed="top" collapseOnSelect variant="dark">
 		<Container className="navbar-container">
-			{/* <Alert show={copied} variant={'success'} dismissible onClose={() => setCopied(false)}>
-            <Alert.Heading>Email Address Copied to Clipboard</Alert.Heading>
-            </Alert> */}
 			<Navbar className="nav-bar" bg="light" expand="lg">
 				<Navbar.Brand as={Link} to="/">
 					<Image src={rk_logo} className="brand"></Image>
@@ -38,17 +34,7 @@ const NavBar = () => {
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
-			{/* <CopyToClipboard text="ramtin.khoee@gmail.com" onCopy={() => setCopied(true)}>
-			</CopyToClipboard> */}
-			{/* <Navbar.Brand as={Link} className="mt-4" to="/">
-					
-				</Navbar.Brand>
-                <Nav className='mx-auto '>
-				<Nav.Link as={Link} className='text-black' to="/works">Works</Nav.Link>
-				<Nav.Link as={Link} className='text-black' to="/contact">Inquire</Nav.Link>
-                </Nav>  */}
 		</Container>
-		// </Navbar>
 	);
 };
 
