@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { Container, Col, Row, Image, Button, CardGroup } from 'react-bootstrap';
 import WorksDisplay from '../../components/WorksDisplay';
 import { projects } from '../../data/works.js';
-import test from '../../../assets/images/RK-logo.svg';
 
 const Works = () => {
 	const [works, setWorks] = useState(projects);

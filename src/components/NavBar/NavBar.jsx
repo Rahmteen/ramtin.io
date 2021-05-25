@@ -2,8 +2,7 @@ import React, { useState, useEffect, useContext, Fragment } from 'react';
 import { StateContext } from '../../providers/StateProvider';
 import { Link, useHistory } from 'react-router-dom';
 import { Nav, Navbar, Container, Col, Row, Image, Button, NavDropdown, FormControl, Alert } from 'react-bootstrap';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
-import rk_logo from '../../../assets/images/rk-logo.svg';
+import rk_logo from '../../../assets/images/RKlogo.png';
 
 const NavBar = () => {
 	const [copied, setCopied] = useState(false);

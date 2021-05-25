@@ -2,7 +2,6 @@ import React, { useState, useEffect, useContext, Fragment } from 'react';
 import { StateContext } from '../../providers/StateProvider';
 import { Link } from 'react-router-dom';
 import { Container, Col, Row, Image, Button, Card, ListGroupItem, ListGroup, CardDeck } from 'react-bootstrap';
-import test from '../../../assets/images/RK-logo.svg';
 import Technologies from '../Technologies';
 
 const WorksDisplay = ({ title, image, description, technologies, github, website, tool, current }) => {
