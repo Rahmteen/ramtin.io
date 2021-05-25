@@ -5,27 +5,28 @@ import { Container, Col, Row, Image, Button, Card, ListGroupItem, ListGroup, Car
 import Technologies from '../Technologies';
 
 const WorksDisplay = ({ title, image, description, technologies, github, website, tool, current }) => {
+	
 	const openInNewTab = (url) => {
 		const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
 		if (newWindow) newWindow.opener = null;
 	};
 
 	return (
-			<Fragment>
-				<Card className='mb-3 mt-3'>
-				<Card.Img as={Image} variant="top" src={image}/>
+		<Fragment>
+			<Card className="mb-3 mt-3">
+				<Card.Img as={Image} variant="top" src={image} />
 				<Card.Body>
-					<Card.Title className='text-tertiary'>{title}</Card.Title>
-					<Card.Text className=''>{description}</Card.Text>
+					<Card.Title className="text-tertiary">{title}</Card.Title>
+					<Card.Text className="">{description}</Card.Text>
 				</Card.Body>
 				<ListGroup className="list-group-flush">
-					<ListGroupItem >
-						<div className='text-tertiary'>Technologies:</div> 
+					<ListGroupItem>
+						<div className="text-tertiary">Technologies:</div>
 					</ListGroupItem>
-					<ListGroupItem >
+					<ListGroupItem>
 						<Technologies technologies={technologies} />
 					</ListGroupItem>
-					{ github ? (
+					{github ? (
 						<ListGroupItem onClick={() => openInNewTab(`${github}`)}>
 							<i className="fab fa-github-square"></i>
 							<span>{`${' '} github`}</span>
@@ -36,7 +37,7 @@ const WorksDisplay = ({ title, image, description, technologies, github, website
 							<span>{`${' '} private`}</span>
 						</ListGroupItem>
 					)}
-					{ website ? (
+					{website ? (
 						<ListGroupItem onClick={() => openInNewTab(`${website}`)}>
 							<i className="fad fa-wifi"></i>
 							<span>{`${' '} website`}</span>

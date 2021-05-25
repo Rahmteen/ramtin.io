@@ -7,7 +7,7 @@ import { projects } from '../../data/works.js';
 
 const Works = () => {
 	const [works, setWorks] = useState(projects);
-
+	
 	return (
 		<Fragment>
 			<Container className="works-container" fluid>
