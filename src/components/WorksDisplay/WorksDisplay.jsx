@@ -12,17 +12,20 @@ const WorksDisplay = ({ title, image, description, technologies, github, website
 
 	return (
 			<Fragment>
-				<Card className='mb-3'>
-				<Card.Img variant="top" src={image} />
+				<Card className='mb-3 mt-3'>
+				<Card.Img as={Image} variant="top" src={image}/>
 				<Card.Body>
 					<Card.Title className='text-tertiary'>{title}</Card.Title>
 					<Card.Text className=''>{description}</Card.Text>
 				</Card.Body>
 				<ListGroup className="list-group-flush">
 					<ListGroupItem >
-						<div className='text-tertiary'>Technologies:</div> <Technologies technologies={technologies} />
+						<div className='text-tertiary'>Technologies:</div> 
 					</ListGroupItem>
-					{github ? (
+					<ListGroupItem >
+						<Technologies technologies={technologies} />
+					</ListGroupItem>
+					{ github ? (
 						<ListGroupItem onClick={() => openInNewTab(`${github}`)}>
 							<i className="fab fa-github-square"></i>
 							<span>{`${' '} github`}</span>
@@ -33,7 +36,7 @@ const WorksDisplay = ({ title, image, description, technologies, github, website
 							<span>{`${' '} private`}</span>
 						</ListGroupItem>
 					)}
-					{website ? (
+					{ website ? (
 						<ListGroupItem onClick={() => openInNewTab(`${website}`)}>
 							<i className="fad fa-wifi"></i>
 							<span>{`${' '} website`}</span>

@@ -8,23 +8,35 @@ const Landing = () => {
 		<Fragment>
 			<Container className="landing-container " fluid>
 				<Row className="landing-row-main text-center">
-					<Col lg={12} md={8} className="text-left">
+					<Col lg={12} md={8} className="text-left animate__animated animate__fadeInDown animate__delay-0.5s">
 						<Link to="/works">
 							{' '}
 							<Image src={rk_logo} className="brand"></Image>
 						</Link>
 					</Col>
-					<Col lg={12} md={8} className=" my-auto text-mono text-right font-tertiary">
+					<Col
+						lg={12}
+						md={8}
+						className="animate__animated animate__fadeInDown animate__delay-1s my-auto text-mono text-right font-tertiary">
 						<span className="text-mono"></span>
 						My name is Ramtin Khoee.
-						<br />
+					</Col>
+					<Col
+						lg={12}
+						md={8}
+						className="animate__animated animate__fadeInDown animate__delay-1s my-auto text-mono text-right font-tertiary">
 						<span className="text-mono">
 							I solve problems <br /> and create projects.
 						</span>
 						<br />
-						<br />
+					</Col>
+					<Col className="animate__animated animate__fadeInDown animate__delay-2s">
 						<Link to="/works">
-							<span className="take-a-look text-mono pt-5"><Button variant="outline-success">Take A Look</Button></span>
+							<div className="take-a-look text-mono pt-5">
+								<Button size={'lg'} variant="outline-success">
+									Take A Look
+								</Button>
+							</div>
 						</Link>
 					</Col>
 				</Row>

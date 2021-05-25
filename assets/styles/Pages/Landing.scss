@@ -1,24 +1,18 @@
-
-
 .landing-container {
-    position: fixed;
-    margin-top: 15%;
-    .brand {
-        height: 180px;
+	position: fixed;
+	margin-top: 15%;
+	.brand {
+		height: 180px;
+	}
 
-    }
-    
+	.landing-row-main {
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
 
-    .landing-row-main {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-
-        .take-a-look {
-            text-decoration: none !important;
-            font-family: monospace;
-        }
-
-    }
-
+		.take-a-look {
+			text-decoration: none !important;
+			font-family: monospace;
+		}
+	}
 }
