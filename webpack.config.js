@@ -3,6 +3,7 @@
 // declare global plugins/depedencies
 let path = require('path');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 // exporting this module for the global rules of webpack
 module.exports = {
@@ -79,7 +80,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: 'src/index.html',
 			favicon: './assets/images/favicon-16x16.png',
-		}),
+		}), new Dotenv()
 	],
 	// resolve extensions for imports into future components
 	resolve: {

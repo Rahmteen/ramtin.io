@@ -6,6 +6,7 @@ import YEETH from "../../assets/images/works/YEETH.jpg"
 import Colourful from "../../assets/images/works/colourful.jpg"
 import MagnaCarta from "../../assets/images/works/MagnaCarta.jpg"
 import eeql_web from "../../assets/images/works/eeql-web.jpg"
+import Responder from "../../assets/images/works/responder.jpg"
 
 
 
@@ -29,7 +30,7 @@ export const projects = [
 			'ipfs',
 		],
 		github: null,
-		website: 'https://www.cardinal.works',
+		website: null,
 		tool: false,
 		image: Regal,
         current: true,
@@ -57,6 +58,16 @@ export const projects = [
 		website: 'https://www.eeql.io',
 		tool: true,
 		image: eeQL,
+        current: false,
+	},
+	{
+		title: 'Responder',
+		description: 'An open source project by SkyCrafters to manage AIM/AWS alerts with webhook intergration',
+		technologies: ['aws', 'yaml', 'rest api', 'javascript'],
+		github: 'https://github.com/skycrafters/responder',
+		website: null,
+		tool: false,
+		image: Responder,
         current: false,
 	},
 	{
@@ -132,15 +143,5 @@ export const projects = [
 		tool: true,
 		image: MagnaCarta,
         current: true,
-	},
-	{
-		title: 'eeQL website',
-		description: 'A website created as a source for documentation on eeQL and the current stable download.',
-		technologies: ['react', 'three.js', 'node.js', 'rest api', 'css', 'html', 'javascript'],
-		github: 'https://github.com/Rahmteen/eeQL-web',
-		website: 'https://www.eeql.io',
-		tool: false,
-		image: eeql_web,
-        current: false,
-	},
+	}
 ];

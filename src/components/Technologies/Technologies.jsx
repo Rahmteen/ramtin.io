@@ -28,7 +28,22 @@ const Technologies = ({ technologies }) => {
 							{` ${tech}, `}
 						</span>
 					);
-				} else if (tech === 'electron') {
+				} else if (tech === 'yaml') {
+					return (
+						<span key={i + 'tech'}>
+							<i className="fas fa-brackets-curly"></i>
+							{` ${tech}, `}
+						</span>
+					)
+				} else if (tech === 'aws') {
+					return (
+						<span key={i + 'tech'}>
+							<i className="fab fa-aws"></i>
+							{` ${tech}, `}
+						</span>
+					)
+				}
+				else if (tech === 'electron') {
 					return (
 						<span key={i + 'tech'}>
 							<i className="fas fa-atom-alt"></i>
