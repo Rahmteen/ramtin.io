@@ -8,20 +8,20 @@ const Landing = () => {
 	const [gitHub, setGithub] = useState(null);
 
 	useEffect(() => {
-		// if (gitHub === null) {
-		// 	axios
-		// 		.get("https://api.github.com/users/rahmteen/events")
-		// 		.then(function (response) {
-		// 			setGithub(response.data);
-		// 			console.log(response.data);
-		// 		})
-		// 		.catch(function (error) {
-		// 			console.log(error);
-		// 		})
-		// 		.then(function () {
-		// 			console.log(gitHub);
-		// 		});
-		// }
+		if (gitHub === null) {
+			axios
+				.get("https://api.github.com/users/rahmteen/events")
+				.then(function (response) {
+					setGithub(response.data);
+					console.log(response.data);
+				})
+				.catch(function (error) {
+					console.log(error);
+				})
+				.then(function () {
+					console.log(gitHub);
+				});
+		}
 	}, []);
 
 	const dateParser = (dateStr) => {
